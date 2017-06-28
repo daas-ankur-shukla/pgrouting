@@ -1,3 +1,7 @@
+\echo --q2
+SELECT * FROM pgr_dijkstra(
+  'SELECT * FROM edge_table', ARRAY[1,4,7,13],  ARRAY[1,4,7,13]);
+  
 \echo -- q2
 WITH
 a AS (SELECT * FROM pgr_dijkstra(
